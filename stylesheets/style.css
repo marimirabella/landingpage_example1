@@ -673,7 +673,7 @@ tr:nth-child(odd):hover, tr:nth-child(odd):hover td{
 	-moz-transition: linear 0.4s, all 0.4s linear;
 	-o-transition: linear 0.4s, all 0.4s linear;
 	-ms-transition: linear 0.4s, all 0.4s linear;
-	transition: linear 0.4, all 0.4s linear;
+	transition: linear 0.4s, all 0.4s linear;
 }
 .b-form__label_name{}
 .b-form__name{}
@@ -745,7 +745,6 @@ tr:nth-child(odd):hover td:last-child:hover{
 	background: -moz-linear-gradient(top,  #13df13 0%, #1d3505 66%); 
 	background: -webkit-linear-gradient(top,  #13df13 0%,#1d3505 66%); 
 	background: linear-gradient(to bottom,  #13df13 0%,#1d3505 66%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13df13', endColorstr='#1d3505',GradientType=0 ); /* IE6-9 */
 	text-shadow: 0 0 2px #fff;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
