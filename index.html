@@ -1,99 +1,105 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
-		<title></title> 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./stylesheets/bootstrap.css">
-		<link rel="stylesheet" href="./stylesheets/mystyle.css">
-		<script src="./scripts/jquery-2.1.4.min.js" type="text/javascript"></script>
-		<script src="./scripts/component.js" type="text/javascript"></script>
-		<script src="./scripts/myscript.js" type="text/javascript"></script>
+		<title>Landing page</title> 
+		<meta charset="utf-8">
+		<meta name="description" content="Landing page">	
+		<meta name="author" content="Maryna Karpovets">	
 
-		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 
+		<!-- CSS File -->
+		<link rel="stylesheet" href="./stylesheets/style.css">
 	</head>
 	<body>
+		<!-- container start -->
 		<div class="b-container" id="container">
-			<!-- <div class="link"><p><a href="http://www.ho.ua/">Реклама: Хороший бесплатный хостинг</a></p></div> -->
-			<div class="b-container__header container"> <!-- start of header with btstr-->
-				<div class="b-header row">
-					<h4 class= "b-header__logo col-xs-12 col-md-6"><img src="./images/logo.png" alt="" class="b-header__img"/><a href="#" class="b-header__link">TREEHOUSE</a></h4>
-					<ul class="b-header__menu col-xs-12 col-md-6" id="menu1">
-						<li class="b-header__menu-item"><a href="#" class="b-header__menu-link">HOME</a></li>
-						<li class="b-header__menu-item"><a href="#" class="b-header__menu-link">ABOUT</a>
-							<ul class='b-submenu'>
-								<li class='b-submenu__item'><a href='#' class='b-submenu__link'>About us</a></li>
-								<li class='b-submenu__item'><a href='#' class='b-submenu__link'>History</a></li>
-								<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Projects</a></li>
-							</ul>
-						</li>
-						<li class="b-header__menu-item"><a href="#" class="b-header__menu-link">BLOG</a></li>
-						<li class="b-header__menu-item"><a href="#" class="b-header__menu-link">PORTFOLIO </a>
-							<ul class='b-submenu'>
-								<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Main Portfolio</a></li>
-								<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Popular</a></li>
-								<li class='b-submenu__item'><a href='#' class='b-submenu__link'>Others</a></li>
-							</ul>
-						</li>
-						<li class="b-header__menu-item"><a href="#" class="b-header__menu-link">CONTACT</a></li>
-					</ul>
-				</div> <!-- end of b-header -->
-			</div> <!-- end of b-container__header -->
-			<div class="b-container__slider row" id="slider"> <!-- start of slider -->
+
+			<!-- header start -->
+			<!-- <div class="b-container__header-wrapper"> -->
+				<div class="b-container__header container"> 
+					<div class="b-header row scrollspy">
+						<h4 class= "b-header__logo"><img src="./images/logo.png" alt="" class="b-header__img"/><a href="#" class="b-header__link">TREEHOUSE</a></h4>
+						<ul class="b-header__menu nav navbar-nav navbar-right" id="menu1">
+							<li class="b-header__menu-item active"><a href="#slider" class="b-header__menu-link">Home</a></li>
+							<li class="b-header__menu-item"><a href="#services" class="b-header__menu-link">Services</a></li>
+							<li class="b-header__menu-item"><a href="#projects" class="b-header__menu-link">Projects</a></li>
+							<li class="b-header__menu-item"><a href="#culture" class="b-header__menu-link">Culture</a></li>
+							<li class="b-header__menu-item"><a href="#clients" class="b-header__menu-link">Clients</a></li>
+							<li class="b-header__menu-item"><a href="#contacts" class="b-header__menu-link">Contacts</a></li>
+						</ul>
+					</div>
+				</div>
+			<!-- </div> -->
+			<!-- header end -->
+
+			<!-- slider start -->
+			<div class="b-container__slider row" id="slider"> 
 				<div class="b-slider col-xs-12 col-md-12"> 
-					<div class="b-slider__wraper"> <!-- start of slides -->
+
+					<!-- slider wraper start -->
+					<div class="b-slider__wraper"> 
 						<ul class="b-slider__slides row">
 							<li class="b-slider__slide"><img src="./images/main.jpg" class="b-slider__img col-xs-12 col-md-12" alt=""/></li>
 							<li class="b-slider__slide"><img src="./images/main2.jpg" class="b-slider__img col-xs-12 col-md-12" alt=""/></li>
-							<!-- <li class="b-slider__slide"><img src="./images/main.jpg" class="b-slider__img col-xs-12 col-md-12" alt=""/></li> -->
 						</ul>  
-					</div> <!-- end of b-slider_wraper -->
-					<div class="b-slider__content"> <!-- start of slider_content -->
+					</div>
+					<!-- slider wraper end -->
+
+					<!-- slider content start-->
+					<div class="b-slider__content"> 
 						<h1 class="b-slider__header">Creative Digital<br/>Solutions</h1>
 						<p class="b-slider__text">Proin iaculis purus consequat sem cure.</p>
 						<button class="b-slider__btn">View Portfolio</button>
-					</div> <!-- end of b-slider__content -->
-				</div> <!-- end of b-slider -->
-			</div> <!-- end of b-container__slider -->
-			<div class="b-container__articles container"> <!-- start of articles with btstr-->
+					</div>
+					<!-- slider content end -->
+
+				</div>
+			</div> 
+			<!-- slider end -->
+
+			<!-- articles start -->
+			<div class="b-container__articles container indent" id="services"> 
 				<div class="b-articles">
 					<div class="b-articles__header row">
-						<h2 class="b-articles__main col-xs-12 col-md-12">Professional Services</h2>
-						<p class="b-articles__sub col-xs-12 col-md-12">Proin iaculis purus consequat sem cure</p>
-					</div> <!-- end of b-article__header -->
+						<h2 class="b-articles__main col-md-12">Professional Services</h2>
+						<p class="b-articles__sub col-md-12">Proin iaculis purus consequat sem cure</p>
+					</div> 
 					<div class="b-articles__article row">
-						<div class="b-article__col col-xs-12 col-md-4">
+						<div class="b-article__col col-xs-12 col-sm-4">
 							<a href="#" class="b-article__link"><img src="./images/heart_icon.png" class="b-article__img" alt=""/></a>
 							<h3 class="b-article__header">beautiful designs</h3>
 							<p class="b-article__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>	
 						</div>
-						<div class="b-article__col col-xs-12 col-md-4">
+						<div class="b-article__col article2-js col-xs-12 col-sm-4">
 							<a href="#" class="b-article__link"><img src="./images/mobile_icon.png" class="b-article__img" alt=""/></a>
 							<h3 class="b-article__header">responsive web</h3>
 							<p class="b-article__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>	
 						</div>
-						<div class="b-article__col col-xs-12 col-md-4">
+						<div class="b-article__col col-xs-12 col-sm-4">
 							<a href="#" class="b-article__link"><img src="./images/line_icon.png" class="b-article__img" alt=""/></a>
 							<h3 class="b-article__header">Marketing tools</h3>
 							<p class="b-article__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>	
 						</div>
-					</div> <!-- end of b-article -->
-				</div> <!-- end of b-articles -->
-			</div> <!-- end of b-container__articles -->
-			<div class="b-container__relax"> <!-- start of relax -->
+					</div> 
+				</div> 
+			</div>
+			<!-- articles end -->
+
+			<!-- relax start -->
+			<div class="b-container__relax indent"> 
 				<div class="b-relax">
 					<div class="b-relax__image row">
 						<img src="./images/relax.jpg" class="b-relax__img col-xs-12 col-md-12" alt=""/>
 					</div>
 					<div class="b-relax__content-rx row" id="content"> 
 						<div class="b-content-rx col-xs-12 col-md-12" id="content"> 
-							<h2 class="b-content-rx__header">Just relax <span class="b-content-rx__symbol">&amp;</span><br/>let us do the heavy lifting</h2>
+							<h2 class="b-content-rx__header">Just relax <span class="b-content-rx__symbol">&amp;</span></h2>
+							<h2 class="b-content-rx__header">let us do the heavy lifting</h2>
 							<p class="b-content-rx__text">Proin iaculis purus consequat sem cure  digni ssim.Donec 
 							<br/>porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
 							<ul class="b-content-rx__list">
@@ -102,20 +108,23 @@
 								<li class="b-content-rx__item"><img src="./images/circle.png" class="b-content-rx__img" alt=""/>Round The Clock Support</li>
 							</ul>
 							<button class="b-content-rx__btn">Learn more</button>
-						</div> <!-- end of b-content-rx -->
-					</div> <!-- end of b-relax__content-rx -->
-				</div> <!-- end of b-relax -->
-			</div> <!-- end of b-container__relax -->
-			 <div class="b-container__project"> <!-- start of project -->
+						</div> 
+					</div> 
+				</div>
+			</div>
+			<!-- relax end -->
+
+			<!-- project start -->
+			<div class="b-container__project indent" id="projects"> 
 			 	<div class="b-project">
 					<div class="b-project__header-pr container">
 						<div class="b-header-pr row">
 							<h2 class="b-header-pr__main col-xs-12 col-md-12">latest project</h2>
 							<p class="b-header-pr__sub col-xs-12 col-md-12">Proin iaculis purus consequat sem cure</p>
 						</div> 
-					</div> <!-- end of b-project__header-pr -->
-					<div class="b-project__colomns row"> <!-- start colomns -->
-						<div class="b-project__first-col col-xs-12 col-md-6"> <!-- start 1col -->
+					</div> 
+					<div class="b-project__colomns row">
+						<div class="b-project__first-col col-xs-12 col-md-6">
 							<h3 class="b-project__header">Developing a framework</h3>
 							<p class="b-project__text">Proin iaculis purus consequat semcure  digni ssim <br/>donec porttitora entum suscipit  aenean rhoncus posuere <br/>odio in tincidunt.</p>
 							<ul class="b-project__list">
@@ -140,88 +149,100 @@
 										<p class="b-project__list-text">Proin iaculis purus consequat sem cure iaculis purus.</p>
 									</div>
 								</li>
-							</ul> <!-- end of b-project__list -->
+							</ul> 
 							<p class="b-project__text_bottom">Proin iaculis purus consequat sem cure  digni ssim donec <br/>porttitora entum suscipit  aenean rhoncus posuere odio in.</p>
 							<button class="b-project__btn">View Details &rarr;</button>
-						</div> <!-- end of b-project__first-col -->
-						<div class="b-project__second-col"> <!-- start 2col -->
+						</div> 
+						<div class="b-project__second-col">
 							<img src="./images/ipad.jpg" class="b-project__img col-xs-12 col-md-6" alt=""/>
 							<img src="./images/ipad_hover.jpg" class="b-project__img_hover col-xs-12 col-md-6" alt=""/>
-						</div> <!-- end of b-project__second-col -->
-					</div> <!-- end of b-project__colomns -->
-				</div> <!-- end of b-project -->
-			</div> <!-- end of b-container__project -->
-			<div class="b-container__culture container"> <!-- start of culture with btstr -->
+						</div> 
+					</div> 
+				</div> 
+			</div>
+			<!-- project end -->
+
+			<!-- culture start -->
+			<div class="b-container__culture container indent" id="culture"> 
 				<div class="b-culture">
 					<div class="b-culture__header row">
-						<h2 class="b-culture__main col-xs-12 col-md-12">culture &amp; Values</h2>
-						<p class="b-culture__sub col-xs-12 col-md-12">Proin iaculis purus consequat cure.</p>
-					</div> <!-- end of b-culture__header -->
+						<h2 class="b-culture__main col-md-12">culture &amp; Values</h2>
+						<p class="b-culture__sub col-md-12">Proin iaculis purus consequat cure.</p>
+					</div> 
 					<div class="b-culture__block">
-						<!-- <div class="b-culture__images row">
-							there was images in one line
-						</div> end of images -->
 						<div class="b-culture__articles row">
-							<div class="b-culture__article col-xs-12 col-md-4">
+							<div class="b-culture__article col-xs-12 col-sm-4">
 								<a href="#" class="b-culture__link"><img src="./images/music_icon.png" class="b-culture__img" alt=""/></a>
 								<h3 class="b-culture__header-ar">Work-Life Balance</h3>
 								<p class="b-culture__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>	
 							</div>
 							<img src="./images/line.png" class="b-culture__img-line" alt="" id="line1"/>
-							<div class="b-culture__article col-xs-12 col-md-4">
+							<div class="b-culture__article col-xs-12 col-sm-4">
 								<a href="#" class="b-culture__link"><img src="./images/lines_icon.png" class="b-culture__img" alt=""/></a>
 								<h3 class="b-culture__header-ar">Quality Over Quantity</h3>
 								<p class="b-culture__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>	
 							</div>
 							<img src="./images/line.png" class="b-culture__img-line" alt="" id="line2"/>
-							<div class="b-culture__article col-xs-12 col-md-4">
+							<div class="b-culture__article col-xs-12 col-sm-4">
 								<a href="#" class="b-culture__link"><img src="./images/star_icon.png" class="b-culture__img" alt=""/></a>
 								<h3 class="b-culture__header-ar">Deliver Excellence</h3>
 								<p class="b-culture__text">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>	
 							</div>
-						</div> <!-- end of b-culture__articles -->
-					</div> <!-- end of b-culture__block -->
-				</div> <!-- end of b-culture -->
-			</div> <!-- end of b-container__culture -->
-			<div class="b-container__clients container"> <!-- start of clients -->
+						</div> 
+					</div> 
+				</div>
+			</div>
+			<!-- culture end -->
+
+			<!-- clients start -->
+			<div class="b-container__clients container indent" id="clients"> 
 				<div class="b-clients"> 
 					<div class="b-clients__header row">
 						<h2 class="b-clients__main col-xs-12 col-md-12">our awesome clients</h2>
 						<p class="b-clients__sub col-xs-12 col-md-12">Proin iaculis purus consequat sem cure.</p>
-					</div> <!-- end of b-clients__header -->
+					</div>
 					<div class="b-clients__row row">
 						<img src="./images/big_circle.png" class="b-culture__img col-xs-3 col-md-3" alt=""/>
 						<div class="b-clients__firstblock col-xs-9 col-md-9">
-							<p class="b-clients__quote">“ Proin iaculis purus consequat sem cure  digni ssim<br/>donec porttitora entum suscipit aenean rhoncus. ”</p>
+							<p class="b-clients__quote">“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”</p>
 							<p class="b-clients__author">- Jamie Richardson, Founder of Cocoa Media</p>
 						</div> 
-					</div> <!-- end of b-clients__firstrow -->
+					</div>
 					<div class="b-clients__row row">
 						<div class="b-clients__secondblock col-xs-9 col-md-9">
-							<p class="b-clients__quote">“ Proin iaculis purus consequat sem cure  digni ssim<br/>donec porttitora entum suscipit aenean rhoncus. ”</p>
+							<p class="b-clients__quote">“ Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus. ”</p>
 							<p class="b-clients__author">- Kim Thompson, Founder of Rainel</p>
 						</div> 
 						<img src="./images/big_circle.png" class="b-culture__img col-xs-3 col-md-3" alt=""/>
-					</div> <!-- end of b-clients__secondtrow -->
-				</div> <!-- end of b-clients -->
-			</div> <!-- end of b-container__clients -->
-			<div class="b-container__ready"> <!-- start of clients -->
+					</div> 
+				</div> 
+			</div>
+			<!-- clients end -->
+
+			<!-- ready start -->
+			<div class="b-container__ready indent"> 
 				<div class="b-ready row"> 
 					<div class="b-ready__block col-xs-12 col-md-12"> 
 						<h2 class="b-ready__header">ready to talk about your next project?</h2>
-						<button class="b-ready__btn">Contact us</button>
+							<a href="#contacts"><button class="b-ready__btn">Contact us</button></a>
 					</div> 
-				</div> <!-- end of b-ready -->
-			</div> <!-- end of b-container__ready -->
-			<div class="b-container__logos container"> <!-- start of logos -->
-				<div class="b-logos row"> <!-- start of clients -->
+				</div> 
+			</div>
+			<!-- ready end -->
+
+			<!-- logos start-->
+			<div class="b-container__logos container"> 
+				<div class="b-logos row"> 
 					<a href="#" class="b-logos__link col-xs-12 col-md-3"><img src="./images/logo_envato.png" class="b-logos__img" alt=""/></a>
 					<a href="#" class="b-logos__link col-xs-12 col-md-3"><img src="./images/logo_wordpress.png" class="b-logos__img" alt=""/></a>
 					<a href="#" class="b-logos__link col-xs-12 col-md-3"><img src="./images/logo_tuts.png" class="b-logos__img" alt=""/></a>
 					<a href="#" class="b-logos__link col-xs-12 col-md-3"><img src="./images/logo_microlanser.png" class="b-logos__img" alt=""/></a>
-				</div> <!-- end of b-logos -->
-			</div> <!-- end of b-container__logos -->
-			<div class="b-container__form container"> <!-- start of form-->
+				</div> 
+			</div>
+			<!-- logos end -->
+
+			<!-- form start -->
+			<div class="b-container__form container indent" id="contacts"> 
 				<h2 class="b-container__form-header">Please leave review</h2>
 				<form action='?' method='GET' class="b-form">
 					<div class='b-form__message b-form__message_error'>
@@ -253,30 +274,38 @@
 						</tr>
 					</table>
 				</form>	
-			</div> <!-- end of form-->
-			<div class="b-container__clock"> <!-- start of clock-->
-				<h2 class="b-container__clock-header">Next summer will be in</h2>
-				<ul class="b-clock"> 
-					<li class="b-clock__month date"></li>
-					<li class="b-clock__point">:</li>
-					<li class="b-clock__day date"></li>
-					<li class="b-clock__point">:</li>
-					<li class="b-clock__hours date"></li>
-					<li class="b-clock__point">:</li>
-					<li class="b-clock__min date"></li>
-					<li class="b-clock__point">:</li>
-					<li class="b-clock__sec date"></li>
-				</ul> 
-			</div> <!-- end of clock-->
-			<div class="b-container__contacts row"> <!-- start of contacts with btstr-->
+			</div>
+			<!-- form end -->
+
+			<!-- clock start -->
+			<div class="b-container__clock indent"> 
+				<div class="b-clock">
+					<h2 class="b-clock__header">Next summer will be in</h2>
+					<ul class="b-clock__time"> 
+						<li class="b-clock__month date"></li>
+						<li class="b-clock__point">:</li>
+						<li class="b-clock__day date"></li>
+						<li class="b-clock__point">:</li>
+						<li class="b-clock__hours date"></li>
+						<li class="b-clock__point">:</li>
+						<li class="b-clock__min date"></li>
+						<li class="b-clock__point">:</li>
+						<li class="b-clock__sec date"></li>
+					</ul> 
+				</div>
+			</div>
+			<!-- clock end -->
+
+			<!-- contacts start -->
+			<div class="b-container__contacts row"> 
 				<div class="b-contacts container">
-					<div class="b-contacts__col  col-xs-12 col-md-4">
+					<div class="b-contacts__col  col-xs-12 col-sm-4">
 						<h3 class="b-contacts__header">Contact Us</h3>
 						<img src="./images/location_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text">55 Main St.<br/>Toronto, ON</br>M1H 3A5</p>
 						<img src="./images/iphone_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text tel">(416) 555-5252</p>	
 						<img src="./images/mail_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text">hello@treehouse.com</p>	
 					</div>
-					<div class="b-contacts__col col-xs-12 col-md-4">
+					<div class="b-contacts__col col-xs-12 col-sm-4">
 						<h3 class="b-contacts__header">Latest Posts</h3>
 						<a href="#" class="b-contacts__link"><img src="./images/news_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text">Made With Love In Toronto</p></a>	
 						<a href="#" class="b-contacts__link"><img src="./images/photo_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text">Startup News &amp; Emerging Tech</p></a>
@@ -284,7 +313,7 @@
 						<a href="#" class="b-contacts__link"><img src="./images/news_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text">Wearable Technology On The Rise</p></a>	
 						<a href="#" class="b-contacts__link"><img src="./images/media_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text">Learn Web Design In 30 Days!</p></a>	
 					</div>
-					<div class="b-contacts__col col-xs-12 col-md-4">
+					<div class="b-contacts__col col-xs-12 col-sm-4">
 						<h3 class="b-contacts__header">Latest Tweets</h3>
 						<a href="#" class="b-contacts__link"><img src="./images/tw_icon.png" class="b-contacts__img" alt=""/><p class="b-contacts__text lastcol">Confucius: Life is really simple,<br/>but we insist on making it<br/>complicated.</p></a>
 						<p class="b-contacts__hashtag">#famousquotes</p>
@@ -293,23 +322,36 @@
 						<p class="b-contacts__hashtag">#freebies #templates</p>
 						<p class="b-contacts__time">2 days ago</p>
 					</div>
-				</div> <!-- end of b-contacts -->
-			</div> <!-- end of b-container__contacts -->
-			<footer class="b-container__footer container"> <!-- start of footer with btstr-->
+				</div>
+			</div>
+			<!-- contacts end -->
+
+			<!-- footer start-->
+			<footer class="b-container__footer container"> 
 				<div class="b-footer row">
-					<p class="b-footer__copyright col-xs-12 col-md-4">&copy; Copyright 2014 FreebiesXpress.com</p>
-					<ul class="b-footer__socials col-xs-12 col-md-6">
+					<p class="b-footer__copyright col-xs-12 col-md-5">&copy; Copyright 2014 FreebiesXpress.com</p>
+					<ul class="b-footer__socials col-xs-12 col-md-5">
 						<li class="b-footer__social"><a href="#" alt="" class="b-footer__link" id="soc1"/></a></li>
 						<li class="b-footer__social"><a href="#" alt="" class="b-footer__link" id="soc2"/></a></li>
 						<li class="b-footer__social"><a href="#" alt="" class="b-footer__link" id="soc3"/></a></li>
 						<li class="b-footer__social"><a href="#" alt="" class="b-footer__link" id="soc4"/></a></li>
 					</ul>
 					<button class="b-footer__btn col-xs-3 col-md-2" id="scrolltop">Back to top</button>
-				</div> <!-- end of b-footer -->
-			</footer> <!-- end of b-container__footer -->
-		</div> <!-- end of b-container -->
-		<script type="text/javascript">
-			var c = new Container("#container");
-		</script>
+				</div> 
+			</footer>
+			<!-- footer end -->
+
+		</div>
+		<!-- container end -->
+
+		<!-- JQuery js file -->
+		<script src="./scripts/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+		<!-- Bootstrap js file -->
+		<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+		<!-- JavaScript main -->
+		<script src="./scripts/script.js" type="text/javascript"></script>
+		
 	</body>
 </html>
