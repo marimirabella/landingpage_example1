@@ -139,10 +139,8 @@ $(document).ready(function(){
 	// Clock
 	// ------------------------------------------------------------
 	setInterval(function(){ 
-		var d1 = new Date("May 31, 2017 23:59:59");
+		var d1 = new Date("May 31, 2018 23:59:59");
 		var d2 = new Date();
-		// var alldays = parseInt((d1-d2)/(1000*60*60*24));
-		// var months 	= d1.getMonth()-d2.getMonth(); if in this year
 		var months 	= parseInt((d1-d2)/(1000*60*60*24*30));
 		var days 	= d1.getDate()-d2.getDate();
 		var hours	= d1.getHours()-d2.getHours();
